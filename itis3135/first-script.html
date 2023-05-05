@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet">
+    <title>ITIS3135 | Ayush Lanka's Adventurous Lion | HTML Script</title>
+    <style>
+
+    </style>
+</head>
+
+<body onload="updateTime()">
+    <script src="scripts/header.js"></script>
+
+    <main>
+        <h1>First Javascript Scripts
+            <h1>
+                <h3 id="time-display"></h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="feeling">How are you feeling?</label>
+                    <input type="text" id="feeling" name="feeling" required><br>
+
+                    <button type="button" onclick="greetUser()">Submit</button>
+                </form>
+                <p id="greeting"></p>
+
+
+
+
+
+                <br>
+                <hr>
+
+
+
+                <div id="game">
+                    <h2>Guess Game</h2>
+                    <p>Guess a number between 1 and 100 to get a discount:</p>
+                    <input type="text" id="guessInput">
+                    <br>
+                    <button onclick="checkGuess()">Check to see if your right</button>
+                    <p id="message"></p>
+                </div>
+                <br>
+                <hr>
+                <form id="sale-form">
+                    <h2>Discount Calculator</h2>
+                    <label for="price-input">Price:</label>
+                    <input type="number" id="price-input" required>
+
+                    <label for="percent-off-input">Percent Off:</label>
+                    <input type="number" id="percent-off-input" required>
+                    <br>
+                    <button type="submit">Calculate Sale Price</button>
+
+                    <p id="sale-price"></p>
+                </form>
+
+                <br>
+                <hr>
+                <div>
+                    <h2>Shopping List</h2>
+                    <ul id="shopping-list"></ul>
+                    <label for="item-input">Add item:</label>
+                    <input type="text" id="item-input" placeholder="Enter item name">
+                    <br>
+                    <button id="add-item-btn">Add</button>
+                    <button id="show-list-btn">Show current list</button>
+                </div>
+
+                <br>
+                <hr>
+                <div>
+                    <h2>Change Calculator</h2>
+                    <label for="total-amount">Total Amount Due:</label>
+                    <input type="number" id="total-amount" />
+
+                    <label for="amount-tendered">Amount Tendered:</label>
+                    <input type="number" id="amount-tendered" />
+                </div>
+                <button id="calculate-change-btn">Calculate Change</button>
+                <div id="change-display"></div>
+
+                <br>
+                <hr>
+
+                <h1>Random Prize Generator</h1>
+                <button id="generate-button">Generate Prize</button>
+                <div id="result"></div>
+
+    </main>
+
+    <script src="scripts/first-scripts.js"></script>
+    <script src="scripts/buttonscripts.js"></script>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+
+</html>

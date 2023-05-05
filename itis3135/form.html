@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/main.css" rel="stylesheet">
+    <title>ITIS3135 | Ayush Lanka's Adventurous Lion | HTML Form</title>
+
+    <style>
+        /* form {
+            font-size: 25px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            font-family: inherit;
+            color: #555;
+        }
+
+        /* input {
+            margin: 10px;
+            opacity: .5px;
+        } */
+        /* 
+        .container {
+            border-radius: 8px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            margin: 5px;
+        }  */
+    </style>
+</head>
+
+<body>
+    <script src="scripts/header.js"></script>
+
+
+    <main>
+        <h1>Store Form: Fill out the following information</h1>
+    </main>
+
+
+    <div class="container">
+
+        <form action="#">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Last, First" required>
+            <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="###-###-####" required>
+            <br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john-doe@email.com" required>
+
+            <h5>Items</h5>
+            <label>
+                <input type="checkbox" name="option1" value="Option 1">
+                Socks
+            </label>
+
+            <label>
+                <input type="checkbox" name="option2" value="Option 2">
+                Shirts
+            </label>
+
+            <label>
+                <input type="checkbox" name="option3" value="Option 3">
+                Pants
+            </label>
+            <br>
+
+            <h5>Store/delivery</h5>
+            <label>
+                <input type="radio" name="gender" value="male">
+                Store Pickup
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="female">
+                Delivery
+            </label>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+
+    </div>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+
+</html>

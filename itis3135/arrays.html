@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet">
+    <title>ITIS3135 | Ayush Lankas Adventurous Lion | HTML Arrays</title>
+
+    <!-- <style>
+        .arrName,
+        .arrSal,
+        .arrNameList {
+            display: inline-block;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <script src="scripts/header.js"></script>
+
+    <hr>
+
+
+
+    <main>
+
+        <script src="scripts/arrays.js"></script>
+
+        <h2 style="font-size: 170%;">Arrays</h2>
+
+        <br>
+
+        <label class="arrName">Enter
+            Name: <input type="text" id="name" required>
+        </label>
+
+        <br>
+
+        <label class="arrSal">Enter Salary:
+            <input type="number" id="salary" required>
+        </label>
+
+        <br>
+
+        <button onclick="addSalary()">Add Salary</button>
+
+        <button onclick="displayResults()">Display Results</button>
+
+        <button onclick="displaySalary()">Display Salary</button>
+
+        <form class="arrNameList">
+            <select id="myList">
+                <option>Select Employee Name:</option>
+                <option>All Employees</option>
+                <option>Samantha</option>
+                <option>Carlos</option>
+                <option>Olivia</option>
+                <option>Elijah</option>
+                <option>Zoe</option>
+            </select>
+        </form>
+
+        <div id="results" style="text-align: center;"></div>
+
+        <br>
+
+        <table id="results_table">
+        </table>
+
+
+        <br>
+        <br>
+
+    </main>
+
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/footer.js"></script>
+</body>
+
+</html>

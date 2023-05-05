@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/hobby.js" defer></script>
+
+    <style>
+        body {
+            background-color: rgb(158, 209, 158);
+            text-align: center;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        h1 {
+            padding: 20px;
+        }
+
+        .heading {
+            color: rgb(131, 49, 131);
+            font-weight: bold;
+        }
+
+        hr {
+            background-color: black;
+        }
+
+        section {
+            display: none;
+            padding: 50px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        ul {
+            text-align: center;
+            list-style-position: inside;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        input:required {
+            border-color: #ff6347;
+        }
+
+        input:valid {
+            border-color: #008000;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .tip {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 30px;
+        }
+
+        .tip h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .tip p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .tip img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            color: rgb(131, 49, 131);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="heading">Soccer Training- My Hobby</h1>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#where">Where</a>
+            <a href="#how">How</a>
+            <a href="#why">Why Us</a>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <section id="home" class="active">
+            <h2>Home Page</h2>
+            <p>Welcome to my website dedicated to soccer, my favorite hobby! Here, you'll find all the latest tips,
+                tricks, and resources to help you become a better player and fan of the game. Whether you're just
+                starting out or have been playing for years, we have something for everyone.
+
+                From mastering the basics of passing, dribbling, and shooting to advanced tactics and strategies, we
+                cover it all. You'll also find articles on the fascinating history and culture of soccer, as well as
+                profiles of some of the greatest players and teams of all time.</p>
+
+            <figure>
+                <img src="images/homeImage.jpeg" height=400 alt="Soccer ball in goal">
+                <figcaption>Soccer ball in goal!</figcaption>
+            </figure>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <figure>
+                <img src="images/aboutImage.jpeg" height=400 alt="Soccer ball in goal">
+                <figcaption>Training Equipment</figcaption>
+            </figure>
+            <p>Welcome to Soccer Training Page, where we provide top-notch training for soccer players of all levels.
+                Our experienced coaches are dedicated to helping you improve your skills and reach your full potential
+                on the field.</p>
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide high-quality soccer training that is accessible to everyone. We believe that
+                anyone can become a great soccer player with the right guidance, and we strive to offer the best
+                training programs to help you achieve your goals.</p>
+            <h2>Our Coaches</h2>
+            <p>Our coaches are experienced soccer players and trainers with a passion for the game. They have a wealth
+                of knowledge and experience that they are eager to share with you to help you improve your skills.</p>
+            <h2>Our Programs</h2>
+            <p>We offer a range of programs to suit players of all ages and skill levels, from beginner to advanced. Our
+                programs include individual coaching, team training, and summer camps.</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions about our programs or would like to sign up for training, please contact us at:
+            </p>
+
+            <ul>
+                <li>Phone: 555-555-5555</li>
+                <li>Email: info@soccertrainingpage.com</li>
+                <li>Address: 123 Main Street, Anytown USA</li>
+            </ul>
+
+        </section>
+
+
+
+
+        <section id="schedule">
+            <figure>
+                <img src="images/scheduleImage.webp" height=400 alt="Soccer ball in goal">
+                <figcaption>Schedule</figcaption>
+            </figure>
+            <h2>Schedule Training</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+
+                <button type="submit" onclick="submitForm()">Submit</button>
+            </form>
+        </section>
+
+        <section id="where">
+            <figure>
+                <img src="images/whereImage.jpeg" height=400 alt="Soccer ball in goal">
+                <figcaption>Training Facility</figcaption>
+            </figure>
+            <h2>Room Information</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Building #</th>
+                        <th>Floor</th>
+                        <th>Room Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123 Main St, New York, NY 10001</td>
+                        <td>123</td>
+                        <td>2</td>
+                        <td>205</td>
+                    </tr>
+                    <tr>
+                        <td>456 Hollywood Blvd, Los Angeles, CA 90028</td>
+                        <td>456</td>
+                        <td>4</td>
+                        <td>402</td>
+                    </tr>
+                    <tr>
+                        <td>789 Wacker Dr, Chicago, IL 60601</td>
+                        <td>789</td>
+                        <td>3</td>
+                        <td>301</td>
+                    </tr>
+                    <tr>
+                        <td>234 Ocean Dr, Miami Beach, FL 33139</td>
+                        <td>234</td>
+                        <td>1</td>
+                        <td>105</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section id="how">
+            <h2>How to Get Into Playing Soccer</h2>
+            <div class="tip">
+                <h2>Tip #1: Start Small</h2>
+                <p>Don't worry if you're new to soccer or don't have much experience. You can start by playing
+                    small-sided games, which are played with fewer players on a smaller field. This will help you
+                    develop your skills and get comfortable with the game before moving on to larger games.</p>
+                <figure>
+                    <img src="images/howImage-1.jpeg" height=400 alt="Soccer ball in goal">
+                    <figcaption>Player playing soccer</figcaption>
+                </figure>
+            </div>
+            <div class="tip">
+                <h2>Tip #2: Practice Your Skills</h2>
+                <p>There are many skills you can practice to improve your soccer game, such as dribbling, passing,
+                    shooting, and ball control. Find a quiet place to practice and start with the basics, like juggling
+                    the ball or passing against a wall. As you improve, you can move on to more advanced skills.</p>
+                <figure>
+                    <img src="images/howImage-2.webp" height=400 alt="Soccer ball in goal">
+                    <figcaption>Player Training</figcaption>
+                </figure>
+            </div>
+            <div class="tip">
+                <h2>Tip #3: Join a Team</h2>
+                <p>Playing on a team is a great way to improve your soccer skills and meet new people. Look for a local
+                    team or league that fits your skill level and interests. You can also join pickup games at a nearby
+                    park or sports complex.</p>
+                <figure>
+                    <img src="images/howImage-3.jpeg" height=400 alt="Soccer ball in goal">
+                    <figcaption>Player joining a team</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="why">
+            <figure>
+                <img src="images/whyUsImage.jpeg" height=400 alt="Soccer ball in goal">
+                <figcaption>Soccer players handshake/working together</figcaption>
+            </figure>
+            <div id="hero">
+                <h2>About Us</h2>
+                <p>We are a leading soccer training program with a mission to help players of all ages and skill levels
+                    improve their game and reach their full potential.</p>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Our History</h2>
+                        <p>Our program was founded in 2005 by former professional soccer player John Smith. Since then,
+                            we have trained thousands of players and helped many of them achieve their dreams of playing
+                            at the collegiate or professional level.</p>
+                    </div>
+
+                    <div class="col">
+                        <h2>Our Philosophy</h2>
+                        <p>At our program, we believe that hard work, dedication, and a positive attitude are the keys
+                            to success both on and off the field. We strive to create a supportive and encouraging
+                            environment where players can grow both as athletes and as people.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h2>Our Coaches</h2>
+                        <p>Our coaching staff is comprised of experienced and knowledgeable coaches who are dedicated to
+                            helping our players improve their skills and reach their full potential. They are passionate
+                            about soccer and are committed to helping our players succeed both on and off the field.</p>
+                    </div>
+
+                    <div class="col">
+                        <h2>Our Facilities</h2>
+                        <p>Our training facilities are state-of-the-art and equipped with the latest technology and
+                            equipment to give our players the best possible training experience. We have both indoor and
+                            outdoor fields, as well as a gym and a recovery center.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+
+
+    </main>
+
+
+    <footer>
+        <p>
+            Designed by
+            <a href="https://webpages.charlotte.edu/alanka4/itis3135/lanka_enterprises/">Ayush's Enterprise</a>
+            &copy;2023
+        </p>
+        <p class="valid">
+            <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html40.png"
+                    alt="Link To HTML Validatorr" />
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Link To CSS Validator" />
+            </a>
+        </p>
+    </footer>
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Remove the 'active' class from all sections
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Add the 'active' class to the clicked section
+                const href = link.getAttribute('href');
+                const section = document.querySelector(href);
+                section.classList.add('active');
+            });
+        });
+
+        function submitForm() {
+            // Retrieve form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const date = document.getElementById("date").value;
+            const time = document.getElementById("time").value;
+            const message = document.getElementById("message").value;
+
+            // Send form data to server
+            // Replace URL with your server endpoint
+            alert("Submitted!")
+        }
+    </script>
+
+
+</body>
+
+</html>
