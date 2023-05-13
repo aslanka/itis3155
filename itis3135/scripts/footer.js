@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <p>
           <a href="https://webpages.charlotte.edu/alanka4/" target="_blank">CLT Home</a> | 
           <a href="https://github.com/aslanka" target="_blank">GitHub</a> | 
-          <a href="https://kashyap76315.github.io/itis3135/" target="_blank">GitHub.io</a> | 
-          <a href="https://github.com/Kashyap76315/Kashyap76315.github.io/tree/main/private_html/itis3135" target="_blank">Course.io</a> | 
+          <a href="https://alanka4.github.io/itis3135/" target="_blank">GitHub.io</a> | 
+          <a href="https://github.com/alanka4/alanka4.github.io/tree/main/private_html/itis3135" target="_blank">Course.io</a> | 
           <a href="https://www.freecodecamp.org/alanka" target="_blank">freeCodeCamp</a> | 
           <a href="https://www.codecademy.com/profiles/alanka" target="_blank">Codeacademy</a> | 
           <a href="https://www.linkedin.com/in/ayush-lanka/" target="_blank">LinkdIn</a>

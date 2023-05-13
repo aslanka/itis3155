@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ITIS3135 | Ayush Lanka Adventurous Lion | Lanka Enterpirses</title>
 
     <style>
         body {
+            /* text-align: center; */
             background-color: #C2847A;
         }
-        
+
         .hero-image {
             height: 55vh;
             width: 100vw;
@@ -21,7 +22,7 @@
             background-position: 50% 50%;
             background-image: url("https://images.pexels.com/photos/1488463/pexels-photo-1488463.jpeg?cs=srgb&dl=pexels-edgars-kisuro-1488463.jpg&fm=jpg");
         }
-        
+
         .overlay {
             position: absolute;
             height: 100%;
@@ -35,14 +36,50 @@
             justify-content: center;
             flex-direction: column;
         }
-        
+
         p,
         ul {
             color: #F6F7F8;
         }
-        
+
         h2 {
             color: #211A1D;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .items {
+            width: 100%;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* creates three columns with equal width */
+            grid-gap: 10px;
+            /* adds some space between grid items */
+        }
+
+        .item {
+
+            padding: 10px;
+            text-align: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+
+        ul {
+            text-align: center;
+            list-style-position: inside;
         }
     </style>
 </head>
@@ -55,67 +92,95 @@
         </div>
     </div>
 
+    <div class="intro">
+        <h2>Learn more about us!</h2>
+        <p>Welcome to our store! We're a locally-owned clothing store based in Charlotte, NC. We're passionate about
+            providing stylish and comfortable clothing for men and women of all ages, shapes, and sizes. Our mission is
+            to
+            help our customers feel confident
+            and beautiful in their own skin. We believe that everyone deserves to look and feel their best, whether
+            they're
+            going out on the town or lounging at home. We take pride in offering high-quality clothing at affordable
+            prices.
+            We source our products
+            from ethical and sustainable suppliers whenever possible, so you can feel good about your purchase. Come
+            visit
+            us at our store in Charlotte or shop online from the comfort of your own home. We can't wait to help you
+            find
+            your next favorite outfit!</p>
+    </div>
+    <h2 class="center">Some things we sell!</h2>
 
-    <h2>Learn more about us!</h2>
-    <p>Welcome to our store! We're a locally-owned clothing store based in Charlotte, NC. We're passionate about providing stylish and comfortable clothing for men and women of all ages, shapes, and sizes. Our mission is to help our customers feel confident
-        and beautiful in their own skin. We believe that everyone deserves to look and feel their best, whether they're going out on the town or lounging at home. We take pride in offering high-quality clothing at affordable prices. We source our products
-        from ethical and sustainable suppliers whenever possible, so you can feel good about your purchase. Come visit us at our store in Charlotte or shop online from the comfort of your own home. We can't wait to help you find your next favorite outfit!</p>
-    <h2>Some things we sell!</h2>
+    <div class="grid-container">
+        <div class="item">
+            <h2>Men's Clothing</h2>
+            <ul>
+                <li>T-shirts</li>
+                <li>Polo shirts</li>
+                <li>Dress shirts</li>
+                <li>Jeans</li>
+                <li>Pants</li>
+                <li>Shorts</li>
+                <li>Jackets</li>
+                <li>Hoodies and sweatshirts</li>
+                <li>Suits and blazers</li>
+            </ul>
 
-    <h2>Men's Clothing</h2>
-    <ul>
-        <li>T-shirts</li>
-        <li>Polo shirts</li>
-        <li>Dress shirts</li>
-        <li>Jeans</li>
-        <li>Pants</li>
-        <li>Shorts</li>
-        <li>Jackets</li>
-        <li>Hoodies and sweatshirts</li>
-        <li>Suits and blazers</li>
-    </ul>
-
-    <h2>Women's Clothing</h2>
-    <ul>
-        <li>Tops and blouses</li>
-        <li>Dresses</li>
-        <li>Jeans</li>
-        <li>Pants</li>
-        <li>Shorts</li>
-        <li>Skirts</li>
-        <li>Jackets</li>
-        <li>Hoodies and sweatshirts</li>
-        <li>Swimwear</li>
-    </ul>
-
-    <h2>Kids' Clothing</h2>
-    <ul>
-        <li>Baby onesies and rompers</li>
-        <li>T-shirts</li>
-        <li>Pants and leggings</li>
-        <li>Shorts</li>
-        <li>Dresses and skirts</li>
-        <li>Jackets and coats</li>
-        <li>Hoodies and sweatshirts</li>
-        <li>Swimwear</li>
-    </ul>
+        </div>
+        <div class="item">
+            <h2>Women's Clothing</h2>
+            <ul>
+                <li>Tops and blouses</li>
+                <li>Dresses</li>
+                <li>Jeans</li>
+                <li>Pants</li>
+                <li>Shorts</li>
+                <li>Skirts</li>
+                <li>Jackets</li>
+                <li>Hoodies and sweatshirts</li>
+                <li>Swimwear</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Kids' Clothing</h2>
+            <ul>
+                <li>Baby onesies and rompers</li>
+                <li>T-shirts</li>
+                <li>Pants and leggings</li>
+                <li>Shorts</li>
+                <li>Dresses and skirts</li>
+                <li>Jackets and coats</li>
+                <li>Hoodies and sweatshirts</li>
+                <li>Swimwear</li>
+            </ul>
+        </div>
+    </div>
 
 
-    <h2>Contact Us!</h2>
-    <h4>
-        Address:
-        <Address>348 MyBuisness, Charlotte, NC 28213</Address>
-    </h4>
-    <h4>
-        Phone Number:
-        <tel>919-497-0927</tel>
-    </h4>
 
-    <h4>
-        Email:
-        <email>clothingstore@gmail.com</email>
-    </h4>
+
+
+
+
+
+
+
+
+
+
+
+
     <footer>
+        <h4>
+            <Address>348 MyBuisness, Charlotte, NC 28213</Address>
+        </h4>
+        <h4>
+            <tel>919-497-0927</tel>
+        </h4>
+
+        <h4>
+            <email>clothingstore@gmail.com</email>
+        </h4>
         <p>Designed by Lanka's Enterpirses @ 2023</p>
     </footer>
 </body>

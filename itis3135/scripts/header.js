@@ -37,8 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
       <li><a href="first-script.html">First Script</a></li>
       <li><a href="polygons.html">Polygons</a></li>
       <li><a href="arrays.html">Arrays</a></li>
-      <li><a href="slideshow.html">Slideshow</a></li>
+     
+      <div class="dropdown">
+      <button class="dropbtn ignore-css">Client
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="project-design.html">Project Design</a>
+        <a href="review1.html">Peer review 1</a>
+        <a href="review2.html">Peer review 2</a>
+        <a href="client/">Client Website</a>
+      </div>
+    </div>
+    <li><a href="slideshow.html">Slideshow</a></li>
     </ul>
+    
   </nav>
 `;
   document.body.insertBefore(header, document.body.firstChild);

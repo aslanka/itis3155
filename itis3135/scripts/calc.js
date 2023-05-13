@@ -1,4 +1,4 @@
-let result = document.getElementById("result");
+let result = document.getElementById("calcresult");
 
 function calculate(value) {
   if (value === "=") {

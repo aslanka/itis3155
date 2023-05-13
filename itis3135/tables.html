@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Personal Webpage | Tables Page</title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,48 +10,7 @@
     <link href="styles/main.css" rel="stylesheet">
     <title>ITIS3135 | Ayush Lanka's Adventurous Lion | HTML Tables</title>
 
-    <style>
-        /* 
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
 
-        th,
-        td {
-            border: 1px solid white;
-            padding: 8px;
-            text-align: left;
-        }
-
-
-
-        tr:first-child {
-            background-color: #646881;
-            color: white;
-        }
-
-
-
-        tr:nth-child(even) {
-            background-color: #646881;
-        }
-
-        tr:nth-child(odd) {
-            background-color: #646881;
-        }
-
-
-
-        tr:last-child {
-            font-weight: bold;
-        }
-
-        ol {
-            text-align: center;
-            list-style-position: inside;
-        } */
-    </style>
 </head>
 
 <body>
@@ -60,21 +19,21 @@
     <main>
         <h2>Welcome to my Tables Page</h2>
         <h3>Employee Data in Simple Table</h3>
-        <ol class="inline" type="1">
-            <div class="tables-list">
-                <li>Ayush Lanka ayushlanka106@gmail.com 7</li>
-                <li>John Smith - johnsmith@gmail.com - 7</li>
-                <li>Emily Johnson - ejohnson@yahoo.com - 3</li>
-                <li>Michael Brown - mbrown@hotmail.com - 9 </li>
-                <li>Sarah Davis - sdavis@gmail.com - 5</li>
-                <li> David Garcia - dgarcia@outlook.com - 2</li>
-                <li> Jessica Martinez - jmartinez@aol.com - 8</li>
-                <li>Matthew Robinson - mrobinson@gmail.com - 1</li>
-            </div>
+        <ol class="inline tables-list">
+
+            <li>Ayush Lanka ayushlanka106@gmail.com 7</li>
+            <li>John Smith - johnsmith@gmail.com - 7</li>
+            <li>Emily Johnson - ejohnson@yahoo.com - 3</li>
+            <li>Michael Brown - mbrown@hotmail.com - 9 </li>
+            <li>Sarah Davis - sdavis@gmail.com - 5</li>
+            <li> David Garcia - dgarcia@outlook.com - 2</li>
+            <li> Jessica Martinez - jmartinez@aol.com - 8</li>
+            <li>Matthew Robinson - mrobinson@gmail.com - 1</li>
+
 
         </ol>
         <h3>My Tabular Information</h3>
-        <table>
+        <table class="table">
 
             <tr>
                 <th>Name</th>
@@ -129,61 +88,73 @@
         </table>
 
         <h3>Employee Data in Complex Table</h3>
+
         <figure>
             <figcaption>Employee Information</figcaption>
-            <table>
-                <tr>
-                    <th>Category</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Years of Service</th>
-                    <th>Salary</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">Marketing</td>
-                    <td>John Smith</td>
-                    <td>johnsmith@gmail.com</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Emily Johnson</td>
-                    <td>ejohnson@yahoo.com</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Sales</td>
-                    <td>Michael Brown</td>
-                    <td>mbrown@hotmail.com</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>IT</td>
-                    <td>Sarah Davis</td>
-                    <td>sdavis@gmail.com</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Marketing</td>
-                    <td>David Garcia</td>
-                    <td>dgarcia@outlook.com</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>Sales</td>
-                    <td>Jessica Martinez</td>
-                    <td>jmartinez@aol.com</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>IT</td>
-                    <td>Matthew Robinson</td>
-                    <td>mrobinson@gmail.com</td>
-                    <td>1</td>
-                </tr>
-
-
-
-
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of service</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Marketing</td>
+                        <td>John Smith</td>
+                        <td>johnsmith@gmail.com</td>
+                        <td>7</td>
+                        <td>$5000</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Johnson</td>
+                        <td>ejohnson@yahoo.com</td>
+                        <td>3</td>
+                        <td>$4500</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Sales</td>
+                        <td>Michael Brown</td>
+                        <td>michaelbrown@hotmail.com</td>
+                        <td>9</td>
+                        <td>$6000</td>
+                    </tr>
+                    <tr>
+                        <td>Sarah Davis</td>
+                        <td>sdavis@gmail.com</td>
+                        <td>5</td>
+                        <td>$5500</td>
+                    </tr>
+                    <tr>
+                        <td>David Garcia</td>
+                        <td>dgarcia@outlook.com</td>
+                        <td>2</td>
+                        <td>$4000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">IT</td>
+                        <td>Ayush Lanka</td>
+                        <td>ayushlanka106@gmail.com</td>
+                        <td>7</td>
+                        <td>$8000</td>
+                    </tr>
+                    <tr>
+                        <td>Matthew Robinson</td>
+                        <td>mrobinson@gmail.com</td>
+                        <td>1</td>
+                        <td>$6500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Total Years of Service</td>
+                        <td>34</td>
+                        <td>$30500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
 
 
 
