@@ -2,24 +2,77 @@
 <html>
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="styles/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="scripts/jquery.bxslider.min.js"></script>
-    <script src="scripts/bxSliderPlugin.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js%22%3E"></script>
     <title>ITIS3135 | Ayush Lanka's Adventurous Lion | Client</title>
 
+    <style>
+        .slideshowShowHere,
+        .ssPix {
+            text-align: center;
+            display: block;
+            position: relative;
+            margin: auto;
+        }
 
+        .ssPix a:hover {
+            text-decoration: none;
+        }
+
+        .ssPixList {
+            display: inline;
+            padding: 1%;
+        }
+
+        .slideshowShowHere {
+            padding: 1%;
+        }
+    </style>
 </head>
 
 <body>
     <script src="scripts/header.js"></script>
+    <script src="scripts/jquery-3.6.4.min.js"></script>
+
+    <script src="scripts/slideshow.js"></script>
     <hr>
+
+
+
+    <ul class="ssPix" id="ssPix">
+
+        <li class="ssPixList">
+            <a href="images/bund.png">
+                <img src="images/bund.png" alt="" title="" width="60" height="60">
+            </a>
+        </li>
+
+        <li class="ssPixList">
+            <a href="images/liga.png">
+                <img src="images/liga.png" alt="" title="" width="60" height="60">
+            </a>
+        </li>
+
+        <li class="ssPixList">
+            <a href="images/prem.png">
+                <img src="images/prem.png" alt="" title="" width="60" height="60">
+            </a>
+        </li>
+    </ul>
+
+    <br>
+
+    <p class="slideshowShowHere">
+        <img id="showHere" src="images/liga.png" alt="" title="" width="550" height="450">
+    </p>
+
+    <br>
 
     <div class="container">
 
-        <img src="images/soccer.jpeg" alt="soccer" class="index">
+        <!-- <img src="images/soccer.jpeg" alt="soccer" class="index"> -->
 
 
         <section>
@@ -55,7 +108,20 @@
 
 
     <script src="scripts/footer.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#slideshow > img:gt(0)").hide();
 
+            setInterval(function () {
+                $('#slideshow > img:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+            }, 3000);
+        });
+    </script>
 </body>
 
 </html>
